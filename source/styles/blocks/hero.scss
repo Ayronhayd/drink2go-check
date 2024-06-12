@@ -1,4 +1,10 @@
-.slider__button {
+.hero {
+  background-color: $flat-white;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.hero__button {
   width: 60px;
   height: 500px;
   color: $color-primary;
@@ -12,11 +18,11 @@
   }
 }
 
-.slider-prev {
+.hero__prev {
   transform: rotate(180deg);
 }
 
-.slider-pagination {
+.hero__pagination {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -25,11 +31,11 @@
   justify-content: center;
 }
 
-.slider-pagination-item {
+.hero__pagination-item {
   margin: 0 4px;
 }
 
-.slider-pagination-button {
+.hero__pagination-button {
   width: 62px;
   height: 4px;
   margin: 0;
@@ -47,4 +53,72 @@
   &:active {
     background-color: $color-primary;
   }
+}
+
+.hero__image {
+  display: block;
+  text-align: center;
+}
+
+.hero__wrapper {
+  position: relative;
+}
+
+.hero__controls {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateX(-2%) translateY(-50%);
+}
+
+
+.hero__card-new {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  color: $color-primary;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.hero__card-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: $color-black;
+  margin: 0;
+}
+
+.hero__card-text {
+  text-align: center;
+  margin: 0;
+}
+
+.hero__card-wrapper-price {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.hero__card-wrapper-price-back {
+  display: flex;
+  gap: 6px;
+}
+
+.hero__card-price-old {
+  font-size: 16px;
+  line-height: 32px;
+  color: $color-primary;
+}
+
+.hero__card-price-new {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+
 }

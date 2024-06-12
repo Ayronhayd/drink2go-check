@@ -86,44 +86,67 @@
     <h1 class="visually-hidden">Интернет-магазин
       кофейных напитков Drink2Go.</h1>
 
-      <section class="hero">
-        <h2 class="visually-hidden">Промо товар</h2>
+    <section class="hero">
+      <h2 class="visually-hidden">Промо товар</h2>
 
-        <img class="slider-image" src="./images/hero/flat-white-mobile@2x@1x.png" width="200" height="200" alt="Примеры работ">
+      <div class="hero__slider">
+        <div class="hero__wrapper container">
+
+          <div class="hero__card">
+            <img class="hero__image" src="./images/hero/flat-white-mobile@1x.png" width="200" height="200"
+              alt="Примеры работ">
+
+            <p class="hero__card-new">Новинка!</p>
+            <h3 class="hero__card-title">Декаф Флэт Уайт</h3>
+            <p class="hero__card-text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что
+              нужно для расслабления после тяжёлого рабочего дня</p>
+            <div class="hero__card-wrapper-price">
+              <div class="hero__card-wrapper-price-back">
+                <del class="hero__card-price-old">295₽</del>
+                <b class="hero__card-price-new">225₽</b>
+              </div>
+            <button class="hero__card button" type="button">Заказать</button>
+            </div>
+          </div>
 
 
-          <button class="slider__button slider-next" type="button">
-            <span class="visually-hidden">Предыдущий товар.</span>
-            <svg class="slider__button-img" width="11" height="20" viewBox="0 0 11 20">
-              <use href="./icons/stack.svg#stroke"></use>
-            </svg>
-          </button>
-          <button class="slider__button slider-prev" type="button">
-            <span class="visually-hidden">Следующий товар.</span>
-            <svg class="slider__button-img" width="11" height="20" viewBox="0 0 11 20">
-              <use href="./icons/stack.svg#stroke"></use>
-            </svg>
-          </button>
 
-
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
+          <div class="hero__controls">
+            <button class="hero__button hero__next" type="button">
+              <span class="visually-hidden">Предыдущий товар.</span>
+              <svg class="hero__button-img" width="11" height="20" viewBox="0 0 11 20">
+                <use href="./icons/stack.svg#stroke"></use>
+              </svg>
             </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 фото</span>
+            <button class="hero__button hero__prev" type="button">
+              <span class="visually-hidden">Следующий товар.</span>
+              <svg class="hero__button-img" width="11" height="20" viewBox="0 0 11 20">
+                <use href="./icons/stack.svg#stroke"></use>
+              </svg>
             </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
-        </ol>
-      </section>
+          </div>
+
+
+          <ol class="hero__pagination">
+            <li class="hero__pagination-item">
+              <button class="hero__pagination-button hero__pagination-button-current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="hero__pagination-item">
+              <button class="hero__pagination-button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="hero__pagination-item">
+              <button class="hero__pagination-button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 
