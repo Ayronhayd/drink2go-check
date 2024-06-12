@@ -21,6 +21,7 @@
   display: flex;
   text-decoration: none;
   padding: 10px;
+  color: $color-black;
 }
 
 .user-list__link-user {
@@ -33,4 +34,9 @@
     line-height: 16px;
     margin-left: 5px;
   }
+}
+
+.user-button__img {
+  width: 16px;
+  height: 16px;
 }
