@@ -1,0 +1,35 @@
+.logo {
+  margin-right: auto;
+
+  &:link:hover {
+    opacity: 0.8;
+  }
+
+  &:link:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__image {
+  display: block;
+}
+
+// .header__logo-sign {
+//   &:link:hover {
+//     opacity: 0.8;
+//   }
+
+//   &:link:active {
+//     opacity: 0.6;
+//   }
+// }
+
+// .logo--footer {
+//   display: flex;
+//   align-items: center;
+
+//   @media (max-width: $mobile-width) {
+//     padding: 8px;
+//     justify-content: center;
+//   }
+// }
