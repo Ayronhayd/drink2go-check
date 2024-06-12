@@ -20,7 +20,8 @@
   <header class="header no-js ">
 
     <div class="header__wrraper no-js container">
-      <div class="header__logo logo">
+      <div class="header__row">
+        <div class="header__logo logo">
         <picture>
           <source width="170" height="36" media="(min-width: 1240px)" srcset="images/logo-desktop.svg"
             type="image/svg+xml">
@@ -30,7 +31,12 @@
         </picture>
       </div>
 
+      <div class="header__title">
+        <p class="header__title-text">Интернет-магазин
+          кофейных напитков</p>
+      </div>
 
+      </div>
 
       <nav class="site-list no-js is-active js-nav-menu">
         <ul class="site-list__menu site-list__menu--index">
@@ -52,15 +58,22 @@
       <ul class="header__user user-list">
         <li class="user-list__item">
           <a class="user-list__link user-list__link--user" href="#">
-            Войти
+            <svg class="social__img" width="27" height="17" viewBox="0 0 27 17">
+              <use href="./icons/stack.svg#user"></use>
+            </svg>
+            <span class="user-list__link-user">Войти</span>
           </a>
         </li>
         <li class="user-list__item">
           <a class="user-list__link user-list__link--union" href="#">
-            Корзина
+            <svg class="social__img" width="27" height="17" viewBox="0 0 27 17">
+              <use href="./icons/stack.svg#union"></use>
+            </svg>
+            <span class="user-list__link-user">Корзина</span>
           </a>
         </li>
       </ul>
+
 
       <button class="header__toggler no-js js-burger" aria-label="бургер меню" type="button">
         <span></span>
@@ -71,8 +84,7 @@
   </header>
   <main>
 
-    <h1>Интернет-магазин
-      кофейных напитков</h1>
+<h1>2</h1>
   </main>
 </body>
 

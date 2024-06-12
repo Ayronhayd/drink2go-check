@@ -1,56 +1,52 @@
 .header {
   position: relative;
-  padding: 13px 0 12px;
+  padding: 12px 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    padding: 25px 0 4px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 55px;
+    padding: 22px 0;
   }
 }
 
-// .header__logo-sign {
-//   text-decoration: none;
-//   width: 101px;
-//   height: 19px;
-//   margin: 10px 3px 0 0;
-
-
-//   @media (min-width: $tablet-width) {
-//     display: none;
-//   }
-// }
 
 .header__wrraper {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 
-.header__logo {
-  text-decoration: none;
-  width: 33px;
-  height: 38px;
+.header__row {
+  display: flex;
+  gap: 20px;
+  margin-right: auto;
 
-  // @media (min-width: $tablet-width) {
-  //   min-width: 174px;
-  //   height: 50px;
-  // }
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
 
-  // @media (min-width: $desktop-width) {
-  //   width: 202px;
-  //   height: 59px;
-  // }
+.header__title {
+  display: none;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 3px;
+
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 126px;
+  }
+}
+
+.header__title-text {
+  margin: 0;
 }
 
 .header__toggler {
-  width: 24px;
+  width: 16px;
   height: 16px;
   background: transparent;
   border: none;
-  padding: 20px 6px 20px 20px;
+  padding: 20px 0 20px 20px;
   margin-left: 5px;
 
   position: relative;
@@ -65,7 +61,7 @@
   }
 
   span {
-    width: 24px;
+    width: 16px;
     height: 2px;
     background-color: $color-black;
     transition: 0.3s ease;
@@ -76,7 +72,7 @@
     transform: translateX(-50%);
 
     &:nth-child(1) {
-      top: 9px;
+      top: 12px;
     }
 
     &:nth-child(2) {
@@ -84,14 +80,14 @@
     }
 
     &:nth-child(3) {
-      top: 25px;
+      top: 22px;
     }
   }
 
   &.is-active {
     span {
       &:nth-child(1) {
-        transform: translate(-34%, 8px) rotate(-47deg);
+        transform: translate(-90%, 5px) rotate(-47deg);
       }
 
       &:nth-child(2) {
@@ -99,7 +95,7 @@
       }
 
       &:nth-child(3) {
-        transform: translate(-31%, -8px) rotate(47deg);
+        transform: translate(-90%, -5px) rotate(47deg);
       }
     }
   }

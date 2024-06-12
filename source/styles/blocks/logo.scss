@@ -1,5 +1,13 @@
 .logo {
-  margin-right: auto;
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    height: 36px;
+  }
 
   &:link:hover {
     opacity: 0.8;
@@ -14,22 +22,12 @@
   display: block;
 }
 
-// .header__logo-sign {
-//   &:link:hover {
-//     opacity: 0.8;
-//   }
+.header__logo-sign {
+  &:link:hover {
+    opacity: 0.8;
+  }
 
-//   &:link:active {
-//     opacity: 0.6;
-//   }
-// }
-
-// .logo--footer {
-//   display: flex;
-//   align-items: center;
-
-//   @media (max-width: $mobile-width) {
-//     padding: 8px;
-//     justify-content: center;
-//   }
-// }
+  &:link:active {
+    opacity: 0.6;
+  }
+}
