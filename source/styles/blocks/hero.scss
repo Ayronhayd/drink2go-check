@@ -21,6 +21,7 @@
   max-width: 1440px;
   padding: 0 20px;
 
+
   @media (min-width: $desktop-width) {
     padding: 0 60px;
   }
@@ -42,29 +43,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
-
-.hero__button {
-  width: 20px;
-  height: 500px;
-  color: $color-primary;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  align-self: center;
-
-  &:active {
-    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 60px;
-    height: 620px;
-  }
-}
-
-.hero__prev {
-  transform: rotate(180deg);
 }
 
 .hero__pagination {
@@ -106,19 +84,6 @@
 
 .hero__pagination-button-current {
   background-color: $color-primary;
-}
-
-.hero__controls {
-  position: absolute;
-  top: 50%;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  transform: translateX(-6%) translateY(-50%);
-
-  @media (min-width: $tablet-width) {
-    transform: translateX(-10%) translateY(-71%);
-  }
 }
 
 .hero__image-wrapper {
@@ -242,4 +207,52 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
+}
+
+.hero__controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  display: flex;
+  width: 100%;
+}
+
+.hero__button {
+  display: flex;
+  width: 20px;
+  height: 656px;
+  justify-content: center;
+  align-items: center;
+  color: $color-primary;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    height: 714px;
+  }
+}
+
+.hero__next {
+  position: absolute;
+  left: 0;
+}
+
+.hero__prev {
+  position: absolute;
+  right: 0;
+  transform: rotate(180deg);
 }
