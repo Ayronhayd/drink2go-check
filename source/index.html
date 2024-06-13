@@ -75,7 +75,7 @@
       </ul>
 
 
-      <button class="header__toggler no-js js-burger" aria-label="бургер меню" type="button">
+      <button class="header__toggler no-js js-toggle-button" aria-label="бургер меню" type="button">
         <span></span>
         <span></span>
         <span></span>
@@ -86,14 +86,14 @@
     <h1 class="visually-hidden">Интернет-магазин
       кофейных напитков Drink2Go.</h1>
 
-    <section class="hero">
+    <section class="hero hero--flat-white ">
       <h2 class="visually-hidden">Промо товар</h2>
 
       <div class="hero__slider">
         <div class="hero__wrapper">
 
           <ul class="hero__card">
-            <li class="hero__card-item hero__card-item--lightest-grey hero__card-item-active">
+            <li class="hero__card-item hero__card-item-active">
               <div class="hero__image-wrapper">
                 <picture>
                   <source type="image/webp" width="600" height="600" media="(min-width: 1240px)"
@@ -127,7 +127,7 @@
                 </div>
               </div>
             </li>
-            <li class="hero__card-item hero__card-item--lavender-latte ">
+            <li class="hero__card-item">
               <div class="hero__image-wrapper">
                 <picture>
                   <source type="image/webp" width="600" height="600" media="(min-width: 1240px)"
@@ -159,7 +159,7 @@
                 </div>
               </div>
             </li>
-            <li class="hero__card-item hero__card-item--espresso ">
+            <li class="hero__card-item">
               <div class="hero__image-wrapper">
                 <picture>
                   <source type="image/webp" width="600" height="600" media="(min-width: 1240px)"
@@ -196,13 +196,13 @@
 
 
           <div class="hero__controls">
-            <button class="hero__button hero__next" type="button">
+            <button class="hero__button slider-button-next" type="button">
               <span class="visually-hidden">Предыдущий товар.</span>
               <svg class="hero__button-img" width="11" height="20" viewBox="0 0 11 20">
                 <use href="./icons/stack.svg#stroke"></use>
               </svg>
             </button>
-            <button class="hero__button hero__prev" type="button">
+            <button class="hero__button slider-button-prev" type="button">
               <span class="visually-hidden">Следующий товар.</span>
               <svg class="hero__button-img" width="11" height="20" viewBox="0 0 11 20">
                 <use href="./icons/stack.svg#stroke"></use>
@@ -213,7 +213,7 @@
 
           <ol class="hero__pagination">
             <li class="hero__pagination-item">
-              <button class="hero__pagination-button hero__pagination-button-current" type="button">
+              <button class="hero__pagination-button slider-pagination" type="button">
                 <span class="visually-hidden">1 фото</span>
               </button>
             </li>

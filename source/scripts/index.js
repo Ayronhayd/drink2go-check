@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-  const button = document.querySelector('.js-burger');
+  const button = document.querySelector('.js-toggle-button');
   const navMenu = document.querySelector('.js-nav-menu');
   const headerWr = document.querySelector('.header__wrraper');
   const header = document.querySelector('.header');
