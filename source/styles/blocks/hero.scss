@@ -34,6 +34,10 @@
 }
 
 .hero__card-item {
+  display: none;
+}
+
+.hero__card-item-active {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
