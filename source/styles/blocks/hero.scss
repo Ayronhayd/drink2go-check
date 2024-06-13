@@ -2,10 +2,11 @@
   background-color: $flat-white;
   padding-top: 20px;
   padding-bottom: 60px;
+  position: relative;
 }
 
 .hero__button {
-  width: 60px;
+  width: 20px;
   height: 500px;
   color: $color-primary;
   background-color: transparent;
@@ -55,13 +56,16 @@
   }
 }
 
-.hero__image {
-  display: block;
-  text-align: center;
+.hero__image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-.hero__wrapper {
-  position: relative;
+.hero__image {
+  display: block;
+  width: 280px;
+  height: 280px;
 }
 
 .hero__controls {
@@ -70,7 +74,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  transform: translateX(-2%) translateY(-50%);
+  transform: translateX(-6%) translateY(-50%);
 }
 
 
@@ -82,6 +86,7 @@
   color: $color-primary;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 4px;
 }
 
 .hero__card-title {
@@ -91,23 +96,27 @@
   text-align: center;
   color: $color-black;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .hero__card-text {
   text-align: center;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .hero__card-wrapper-price {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+  gap: 27px;
+  justify-content: center;
 }
 
 .hero__card-wrapper-price-back {
   display: flex;
   gap: 6px;
+  padding-top: 5px;
 }
 
 .hero__card-price-old {
@@ -120,5 +129,4 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
-
 }
