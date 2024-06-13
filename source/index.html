@@ -92,25 +92,42 @@
       <div class="hero__slider">
         <div class="hero__wrapper container">
 
-          <div class="hero__card">
-            <div class="hero__image-wrapper">
-              <img class="hero__image" src="./images/hero/flat-white-mobile@1x.png" width="280" height="280"
-                alt="Примеры работ">
-            </div>
-
-            <p class="hero__card-new">Новинка!</p>
-            <h3 class="hero__card-title">Декаф Флэт Уайт</h3>
-            <p class="hero__card-text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то,
-              что
-              нужно для расслабления после тяжёлого рабочего дня</p>
-            <div class="hero__card-wrapper-price">
-              <div class="hero__card-wrapper-price-back">
-                <del class="hero__card-price-old">295₽</del>
-                <b class="hero__card-price-new">225₽</b>
+          <ul class="hero__card">
+            <li class="hero__card-item">
+              <div class="hero__image-wrapper">
+                <picture>
+                  <source type="image/webp" width="600" height="600" media="(min-width: 1240px)"
+                  srcset="./images/hero/flat-white-desktop@1x.webp 1x, ./images/hero/flat-white-desktop@1x.webp 2x">
+                <source type="image/webp" width="476" height="476" media="(min-width: 768px)"
+                  srcset="./images/hero/flat-white-tablet@1x.webp 1x, ./images/hero/flat-white-tablet@2x.webp 2x">
+                  <source type="image/webp" width="280" height="280"
+                  srcset="./images/hero/flat-white-mobile@1x.webp 1x, ./images/hero/flat-white-mobile@1x.webp 2x">
+                  <source type="image/png" width="600" height="600" media="(min-width: 1240px)"
+                  srcset="./images/hero/flat-white-desktop@1x.png 1x, ./images/hero/flat-white-desktop@2x.png 2x">
+                <source type="image/png" width="476" height="476" media="(min-width: 768px)"
+                  srcset="./images/hero/flat-white-tablet@1x.png 1x, ./images/hero/flat-white-tablet@2x.png 2x">
+                <img class="hero__image" src="./images/hero/flat-white-mobile@1x.png"
+                  srcset="./images/hero/flat-white-mobile@2x.png" width="280" height="280"
+                  alt="Примеры работ">
+                </picture>
               </div>
-              <button class="hero__card button" type="button">Заказать</button>
+              <div>
+                <p class="hero__card-new">Новинка!</p>
+                <h3 class="hero__card-title">Декаф Флэт Уайт</h3>
+                <p class="hero__card-text">Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком&nbsp;&mdash; то,
+                  что
+                  нужно для расслабления после тяжёлого рабочего дня</p>
+
+              <div class="hero__card-wrapper-price">
+                <div class="hero__card-wrapper-price-back">
+                  <del class="hero__card-price-old">295₽</del>
+                  <b class="hero__card-price-new">225₽</b>
+                </div>
+                <button class="hero__card button" type="button">Заказать</button>
+              </div>
             </div>
-          </div>
+            </li>
+          </ul>
 
 
 

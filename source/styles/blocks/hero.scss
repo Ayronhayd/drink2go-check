@@ -3,6 +3,30 @@
   padding-top: 20px;
   padding-bottom: 60px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px;
+    background: linear-gradient(0deg, rgba(255 255 255) 28%, rgba(243 235 225) 29%);
+  }
+}
+
+.hero__card {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__card-item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+  }
 }
 
 .hero__button {
@@ -16,6 +40,11 @@
 
   &:active {
     background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 620px;
   }
 }
 
@@ -46,6 +75,10 @@
   cursor: pointer;
   display: none;
 
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+
   &:hover,
   &:focus {
     background-color: $primary-opacity;
@@ -56,16 +89,8 @@
   }
 }
 
-.hero__image-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.hero__image {
-  display: block;
-  width: 280px;
-  height: 280px;
+.hero__pagination-button-current {
+  background-color: $color-primary;
 }
 
 .hero__controls {
@@ -75,8 +100,38 @@
   justify-content: space-between;
   width: 100%;
   transform: translateX(-6%) translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(-10%) translateY(-71%);
+  }
 }
 
+.hero__image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  order: 1;
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+.hero__image {
+  display: block;
+  width: 280px;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    height: 476px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 600px;
+  }
+}
 
 .hero__card-new {
   font-size: 12px;
@@ -97,12 +152,25 @@
   color: $color-black;
   margin: 0;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+    margin-bottom: 16px;
+  }
 }
 
 .hero__card-text {
   text-align: center;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 19px;
+  }
 }
 
 .hero__card-wrapper-price {
@@ -111,6 +179,10 @@
   margin-right: auto;
   gap: 27px;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .hero__card-wrapper-price-back {
