@@ -1,0 +1,139 @@
+.features {
+  background-color: $color-white;
+  padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 0;
+  }
+}
+
+.features__title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  color: $color-primary;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.features__titled {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: $color-black;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.features__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.features__wrapper-text {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.features__svg-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.features__svg {
+  display: block;
+  width: 52px;
+  height: 56px;
+}
+
+.features__slogan {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  color: $color-black;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: start;
+    margin-bottom: 10px;
+    margin-top: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-black;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
