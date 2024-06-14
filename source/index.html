@@ -17,7 +17,7 @@
 
 <body class="page__body">
 
-  <header  class="header no-js" >
+  <header class="header no-js">
 
     <div class="header__wrraper no-js container">
       <div class="header__row">
@@ -32,8 +32,8 @@
         </div>
 
         <div class="header__title">
-          <p class="header__title-text">Интернет-магазин
-            кофейных напитков</p>
+          <span class="header__title-text">Интернет-магазин
+            кофейных напитков</span>
         </div>
 
       </div>
@@ -284,6 +284,106 @@
         </li>
       </ul>
 
+    </section>
+
+    <section class="catalog">
+      <h2>Каталог</h2>
+      <p>Каталог кофейных напитков</p>
+
+      <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset>
+          <legend class="catalog__title">Цена</legend>
+
+
+          <div class="wrapper">
+            <div class="price-input">
+              <label class="field">
+                <span class="visually-hidden">от</span>
+                <input class="input-min" name="input-max" type="number"  value="2500" min="0" max="1000" step="10">
+            </label>
+              <div class="separator">-</div>
+              <label class="field">
+                <span class="visually-hidden">до</span>
+                <input class="input-max" name="input-max" type="number" value="7500" min="0" max="1000" step="10">
+              </label>
+            </div>
+            <div class="slider">
+              <div class="progress"></div>
+            </div>
+            <div class="range-input">
+              <label class="catalog-filter-label">
+                <input class="range-min" name="price-from" type="range"  min="0" max="10000" value="2500" step="100" >
+                <span class="visually-hidden">ползунок минимальной цены.</span>
+              </label>
+              <label class="catalog-filter-label">
+                <input class="range-max" name="price-to" type="range"  min="0" max="10000" value="10000" step="100">
+                <span class="visually-hidden">ползунок максимальной цены.</span>
+              </label>
+            </div>
+            </div>
+
+            <!-- <div class="catalog__range-scale scale">
+            <div class="scale__range-bar" style="left: 10px; width: 241px">
+              <button class="scale__range-thumb scale__toggle-min" type="button">
+                <span class="visually-hidden">ползунок минимальной цены.</span>
+              </button>
+              <button class="scale__range-thumb scale__toggle-max" type="button">
+                <span class="visually-hidden">ползунок максимальной цены.</span>
+              </button>
+            </div>
+          </div> -->
+
+            <!-- <div class="range">
+              <div class="range-fields">
+                <label class="catalog-filter-label">
+                  <span class="visually-hidden">от</span>
+                  <input class="range-input range-input-min" type="number" name="price-from" min="0" max="900" step="10"
+                    placeholder="0">
+
+                </label>
+                <div>-</div>
+                <label class="catalog-filter-label">
+                  <span class="visually-hidden">до</span>
+                  <input class="range-input range-input-max" type="number" name="price-to" min="0" max="900" step="10"
+                    placeholder="900">
+                </label>
+              </div> -->
+
+
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="visually-hidden">Наличие молока</legend>
+
+          <ul class="field-group__list field-group__list--target">
+            <li class="field-group__item field-group__item--radio">
+              <label class="control control--radio">
+                <input class="control__input" name="target" type="radio" value="fit">
+                <span class="control__lead">Неважно</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend class="visually-hidden">Страна произрастания</legend>
+        </fieldset>
+
+        <button class="form__button button" type="submit">Отправить заявку</button>
+        <button class="form__button button" type="submit">Сбросить</button>
+
+        </div>
+      </form>
+
+      <div>
+        <select class="select-control" name="sorting" aria-label="Сортировка">
+          <option value="popular">Сначала популярные</option>
+          <option value="cheap" selected>Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+      </div>
     </section>
   </main>
 </body>
