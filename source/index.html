@@ -294,7 +294,7 @@
         <div class="catalog__filter filter">
           <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__group">
-              <legend class="filter__title">Цена</legend>
+              <legend class="filter__title  filter__title--pixsel">Цена</legend>
               <div class="range"></div>
               <div class="filter__range-group">
                 <label class="filter__range-label">
@@ -302,6 +302,7 @@
                   <input class="filter__range-number filter__range-min" id="min" type="number" name="min-price" min="0"
                     max="1000" placeholder="0" required>
                 </label>
+                <div class="range__split"></div>
                 <label class="filter__range-label">
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                   <input class="filter__range-number filter__range-max" id="max" type="number" name="max-price" min="0"
@@ -397,8 +398,8 @@
             <h3 class="sorting__title">Сортировка:</h3>
             <select class="sorting__select" name="sorting">
               <option value="default">По умолчанию</option>
-              <option value="novelty">Новинки</option>
-              <option value="discounted">Со скидкой</option>
+              <option value="cheap">дешевые</option>
+              <option value="darlings">дорогие</option>
             </select>
           </div>
           <ul class="catalog__list ">
@@ -414,10 +415,10 @@
                       alt="Банка кофе Декаф Флэт Уайт.">
                   </picture>
                 </a>
-                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <a class="card__title" href="#">Декаф Флэт Уайт</a>
                 <p class="card__text">Кофе без кофеина из&nbsp;Эфиопии
                   с&nbsp;натуральным фермерским молоком</p>
-                <span class="current-price">225₽</span>
+                <span class="card__price">225₽</span>
                 <button class="card__button button " type="button">В корзину</button>
               </div>
             </li>
@@ -433,10 +434,10 @@
                       alt="Банка кофе Декаф Флэт Уайт.">
                   </picture>
                 </a>
-                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <a class="card__title" href="#">Декаф Флэт Уайт</a>
                 <p class="card__text">Кофе без кофеина из&nbsp;Эфиопии
                   с&nbsp;натуральным фермерским молоком</p>
-                <span class="current-price">225₽</span>
+                <span class="card__price">225₽</span>
                 <button class="card__button button " type="button">В корзину</button>
               </div>
             </li>
@@ -452,10 +453,10 @@
                       alt="Банка кофе Декаф Флэт Уайт.">
                   </picture>
                 </a>
-                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <a class="card__title" href="#">Декаф Флэт Уайт</a>
                 <p class="card__text">Кофе без кофеина из&nbsp;Эфиопии
                   с&nbsp;натуральным фермерским молоком</p>
-                <span class="current-price">225₽</span>
+                <span class="card__price">225₽</span>
                 <button class="card__button button " type="button">В корзину</button>
               </div>
             </li>
@@ -471,10 +472,10 @@
                       alt="Банка кофе Декаф Флэт Уайт.">
                   </picture>
                 </a>
-                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <a class="card__title" href="#">Декаф Флэт Уайт</a>
                 <p class="card__text">Кофе без кофеина из&nbsp;Эфиопии
                   с&nbsp;натуральным фермерским молоком</p>
-                <span class="current-price">225₽</span>
+                <span class="card__price">225₽</span>
                 <button class="card__button button " type="button">В корзину</button>
               </div>
             </li>
@@ -490,10 +491,10 @@
                       alt="Банка кофе Декаф Флэт Уайт.">
                   </picture>
                 </a>
-                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <a class="card__title" href="#">Декаф Флэт Уайт</a>
                 <p class="card__text">Кофе без кофеина из&nbsp;Эфиопии
                   с&nbsp;натуральным фермерским молоком</p>
-                <span class="current-price">225₽</span>
+                <span class="card__price">225₽</span>
                 <button class="card__button button " type="button">В корзину</button>
               </div>
             </li>
@@ -509,17 +510,17 @@
                       alt="Банка кофе Декаф Флэт Уайт.">
                   </picture>
                 </a>
-                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <a class="card__title" href="#">Декаф Флэт Уайт</a>
                 <p class="card__text">Кофе без кофеина из&nbsp;Эфиопии
                   с&nbsp;натуральным фермерским молоком</p>
-                <span class="current-price">225₽</span>
+                <span class="card__price">225₽</span>
                 <button class="card__button button " type="button">В корзину</button>
               </div>
             </li>
           </ul>
           <div class="pagination">
-            <a class="pagination__prev" href="#">Назад</a>
-            <ul class="pagination__list ">
+            <a class="pagination__icon pagination__prev" href="#"><span class="visually-hidden">Назад</span></a>
+            <ul class="pagination__list">
               <li class="pagination__item">
                 <a class="pagination__link" href="#">1</a>
               </li>
@@ -530,7 +531,7 @@
                 <a class="pagination__link" href="#">3</a>
               </li>
             </ul>
-            <a class="pagination-next" href="#">Вперёд</a>
+            <a class="pagination__icon pagination-next " href="#"><span class="visually-hidden">Вперёд</span></a>
           </div>
         </div>
       </div>

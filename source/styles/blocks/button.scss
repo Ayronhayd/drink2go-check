@@ -9,9 +9,40 @@
   border: none;
   letter-spacing: 1px;
   cursor: pointer;
+
+  &:hover {
+    color: $color-white;
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    color: $color-white;
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    color: $color-white;
+    background-color: $color-gray;
+  }
 }
 
 .button--other {
   background-color: $color-white;
   color: $color-primary;
+
+  &:disabled {
+    color: $color-white;
+    background-color: $light-grey;
+  }
+}
+
+.card__button {
+  font-size: 14px;
+  line-height: 20px;
+  content: "";
+  background-image: url("../../icons/stack.svg#catalog-basket");
+  background-size: 20px 16px;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  padding-left: 37px;
 }

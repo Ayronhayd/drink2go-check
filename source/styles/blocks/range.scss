@@ -5,3 +5,11 @@
 .range__field[type="number"] {
   appearance: textfield;
 }
+
+.range__split {
+  width: 8px;
+  height: 2px;
+  background-color: $color-gray;
+  display: flex;
+  align-self: center;
+}

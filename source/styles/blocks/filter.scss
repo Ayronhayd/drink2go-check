@@ -1,17 +1,27 @@
+.filter__form {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
 .filter__group {
   padding: 0;
-  margin: 0 0 30px;
   border: none;
   max-width: 318px;
 }
 
 .filter__title {
-  margin: 0 0 30px;
-  padding: 0;
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   color: $color-black;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.filter__title--pixsel {
+  margin-bottom: 30px;
 }
 
 .filter__range-group {
@@ -29,12 +39,12 @@
 }
 
 .filter__range-number {
-  border: none;
-  background-color: transparent;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
+  border: none;
+  background-color: transparent;
   text-align: center;
   color: $color-black;
 
@@ -48,4 +58,10 @@
     color: $color-gray;
     opacity: 1;
   }
+}
+
+.filter__button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

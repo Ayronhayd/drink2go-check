@@ -1,0 +1,48 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.pagination__link {
+  display: block;
+  text-decoration: none;
+  color: $color-primary;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+}
+
+
+.pagination__link--current {
+  color: $color-black;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+
+
+.pagination__icon {
+  display: block;
+  mask-image: url("../../icons/stack.svg#catalog-stroke");
+  width: 24px;
+  height: 24px;
+  mask-size: 10px 6px;
+  mask-repeat: no-repeat;
+  background-color: $color-primary;
+  padding: 20px;
+  mask-position: 50% 50%;
+}
+
+.pagination-next {
+  transform: rotate(180deg);
+}

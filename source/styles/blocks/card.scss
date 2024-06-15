@@ -1,0 +1,19 @@
+.card__link {
+  text-decoration: none;
+  display: block;
+}
+
+.card__title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  color: $color-black;
+  text-decoration: none;
+}
+
+.card__price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
