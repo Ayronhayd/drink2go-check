@@ -19,7 +19,7 @@
   background-color: $flat-white;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(0deg, rgb(255 255 255) 28%, $flat-white 29%);
+    background: linear-gradient(0deg, rgb(255 255 255) 24%, $flat-white 24%);
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +31,7 @@
   background-color: $lavender-latte;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(0deg, rgb(255 255 255) 28%, $lavender-latte 29%);
+    background: linear-gradient(0deg, rgb(255 255 255) 24%, $lavender-latte 24%);
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +43,7 @@
   background-color: $espresso;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(0deg, rgb(255 255 255) 28%, $espresso 29%);
+    background: linear-gradient(0deg, rgb(255 255 255) 24%, $espresso 24%);
   }
 
   @media (min-width: $desktop-width) {
@@ -104,7 +104,7 @@
   height: 4px;
   margin: 0;
   padding: 0;
-  background-color: #dbdbdb;
+  background-color: $color-white;
   border: none;
   cursor: pointer;
   display: none;
@@ -123,7 +123,7 @@
   }
 }
 
-.slider-pagination {
+.hero-pagination {
   background-color: $color-primary;
 }
 

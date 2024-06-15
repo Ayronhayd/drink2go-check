@@ -1,7 +1,39 @@
+.sorting {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 29px;
+    justify-content: end;
+  }
+}
+
+.sorting__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.3px;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0;
+  }
+}
+
 .sorting__select {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  letter-spacing: 1px;
   border: none;
   color: $color-primary;
+  padding-right: 5px;
+  background-color: $lightest-grey;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 1.1px;
+    padding-right: 10px;
+  }
 }

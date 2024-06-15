@@ -1,5 +1,9 @@
 .range {
-  margin: 0 0 34px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .range__field[type="number"] {

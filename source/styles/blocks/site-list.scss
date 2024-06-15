@@ -65,8 +65,8 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid transparent;
-    padding-top: 12px;
-    padding-bottom: 28px;
+    padding: 10px 15px 30px;
+    letter-spacing: 1px;
   }
 
   &:link:hover {

@@ -1,6 +1,7 @@
 .features {
   background-color: $color-white;
   padding-top: 50px;
+  padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
     padding: 50px 30px 0;
@@ -55,11 +56,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px 30px;
+    padding-bottom: 98px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 120px;
   }
 }
 
@@ -129,11 +132,13 @@
   @media (min-width: $tablet-width) {
     text-align: start;
     line-height: 24px;
+    letter-spacing: 1.2px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: 0;
   }
 }

@@ -1,6 +1,49 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 30px;
+  }
+}
+
+.card__item {
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
+}
+
 .card__link {
   text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
+}
+
+.card__wrapper-text {
+  padding: 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 30px;
+  }
 }
 
 .card__title {
@@ -10,10 +53,39 @@
   line-height: 32px;
   color: $color-black;
   text-decoration: none;
+  display: block;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 9px;
+  }
 }
 
 .card__price {
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
+}
+
+.card__text {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 19px;
+  }
+}
+
+.card__wrapper-price {
+  display: flex;
+  gap: 50px;
+
+  @media (min-width: $tablet-width) {
+    gap: 0;
+    justify-content: space-between;
+  }
 }

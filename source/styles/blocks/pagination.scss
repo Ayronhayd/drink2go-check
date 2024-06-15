@@ -1,6 +1,11 @@
 .pagination {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    gap: 20px;
+  }
 }
 
 .pagination__list {
@@ -18,7 +23,8 @@
   text-align: center;
   font-size: 16px;
   line-height: 24px;
-  padding: 8px;
+  padding: 8px 16px;
+  background-color: $color-white;
 }
 
 
@@ -28,21 +34,47 @@
   font-weight: 600;
   line-height: 24px;
   text-align: center;
+  background-color: $lightest-grey;
 }
 
+.pagination__img {
+  width: 10px;
+  height: 6px;
+}
 
-.pagination__icon {
-  display: block;
+.pagination__link-move {
+  background-color: $color-white;
+  text-decoration: none;
+}
+
+.pagination__move {
+  display: flex;
+  align-items: center;
+  color: $color-primary;
+  width: 40px;
+  height: 40px;
+  padding: 8px 10px;
   mask-image: url("../../icons/stack.svg#catalog-stroke");
-  width: 24px;
-  height: 24px;
-  mask-size: 10px 6px;
+  mask-size: 15px 10px;
   mask-repeat: no-repeat;
   background-color: $color-primary;
-  padding: 20px;
   mask-position: 50% 50%;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    mask-image: none;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    padding: 8px 20px;
+  }
 }
 
 .pagination-next {
   transform: rotate(180deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(0);
+  }
 }

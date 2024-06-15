@@ -39,7 +39,7 @@ export default {
       "referenceUrl": "./reference/index.html",
       misMatchThreshold: 3,
       requireSameDimension: false,
-      clickSelectors: ['.slider-pagination > :where(li:nth-child(3) button, button:nth-child(3))'],
+      clickSelectors: ['.hero-pagination > :where(li:nth-child(3) button, button:nth-child(3))'],
       postInteractionWait: 500,
       selectors: [`[data-test="hero"]`],
     },
