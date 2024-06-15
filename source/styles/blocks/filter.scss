@@ -83,7 +83,6 @@
 
 .filter__button {
   @media (min-width: $desktop-width) {
-    letter-spacing: 1.3px;
     padding: 8px 28px;
   }
 }
@@ -103,5 +102,6 @@
     margin-top: 6px;
     justify-content: start;
     max-width: 318px;
+    gap: 0 25px;
   }
 }

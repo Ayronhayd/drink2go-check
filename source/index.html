@@ -18,7 +18,7 @@
 
 <body class="page__body">
 
-  <header class="header no-js">
+  <header class="header no-js" data-test="header">
 
     <div class="header__wrraper no-js container">
       <div class="header__row">
@@ -87,7 +87,7 @@
     <h1 class="visually-hidden">Интернет-магазин
       кофейных напитков Drink2Go.</h1>
 
-    <section class="hero hero--flat-white ">
+    <section class="hero hero--flat-white" data-test="hero">
       <h2 class="visually-hidden">Промо товар</h2>
 
       <div class="hero__slider">
@@ -233,7 +233,7 @@
       </div>
     </section>
 
-    <section class="features container">
+    <section class="features container" data-test="features">
       <h2 class="features__title">Преимущества</h2>
       <p class="features__titled">Главные причины выбрать Drink2Go</p>
       <ul class="features__list">
@@ -287,7 +287,7 @@
 
     </section>
 
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <div class="catalog__container container">
         <h2 class="catalog__title">Каталог</h2>
         <span class="catalog__text">Каталог кофейных напитков</span>
@@ -552,6 +552,26 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="map" data-test="map" >
+      <h2 class="visually-hidden">карта</h2>
+      <div class="map__wrapper">
+        <picture>
+          <source type="image/webp" width="1440" height="540" media="(min-width: 1240px)"
+            srcset="./images/map-desktop@1x.webp 1x, ./images/map-desktop@1x.webp 2x">
+          <source type="image/webp" width="768" height="480" media="(min-width: 768px)"
+            srcset="./images/map-tablet@1x.webp 1x, ./images/map-tablet@2x.webp 2x">
+          <source type="image/webp" width="320" height="420"
+            srcset="./images/map-mobil@1x.webp 1x, ./images/map-mobil@1x.webp 2x">
+          <source type="image/jpg" width="1440" height="540" media="(min-width: 1240px)"
+            srcset="./images/map-desktop@1x.jpg 1x, ./images/map-desktop@2x.jpg 2x">
+          <source type="image/jpg" width="768" height="480" media="(min-width: 768px)"
+            srcset="./images/map-tablet@1x.jpg 1x, ./images/map-tablet@2x.jpg 2x">
+          <img class="map__image" src="./images/map-mobil@1x.jpg"
+            srcset="./images/map-mobil@2x.jpg" width="320" height="420" alt="Примеры работ">
+        </picture>
       </div>
     </section>
   </main>
