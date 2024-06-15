@@ -36,7 +36,7 @@
   }
 }
 
-.card__button {
+.button--card {
   font-size: 14px;
   line-height: 20px;
   content: "";
@@ -45,4 +45,8 @@
   background-repeat: no-repeat;
   background-position: 16% 50%;
   padding-left: 46px;
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 20px 8px 49px;
+  }
 }

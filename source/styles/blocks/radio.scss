@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .radio-list {

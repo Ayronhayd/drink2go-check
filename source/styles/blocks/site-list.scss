@@ -65,8 +65,8 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid transparent;
-    padding: 10px 15px 30px;
-    letter-spacing: 1px;
+    padding: 10px 20px 30px;
+    font-weight: 500;
   }
 
   &:link:hover {
@@ -81,5 +81,6 @@
 .site-list__link--active {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $color-primary;
+    color: $color-primary;
   }
 }

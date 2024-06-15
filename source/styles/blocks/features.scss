@@ -132,13 +132,10 @@
   @media (min-width: $tablet-width) {
     text-align: start;
     line-height: 24px;
-    letter-spacing: 1.2px;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0;
   }
 }

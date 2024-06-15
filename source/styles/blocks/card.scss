@@ -12,7 +12,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0 30px;
+    gap: 30px 30px;
   }
 }
 
@@ -35,6 +35,12 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 25px;
+  }
+}
+
+.card__item--hot {
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -67,6 +73,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
+  padding-top: 2px;
 }
 
 .card__text {

@@ -1,7 +1,7 @@
 .filter__form {
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: 30px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -11,17 +11,15 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    gap: 32px 7px;
   }
 }
 
 .filter__group {
+  margin: 0;
   padding: 0;
   border: none;
   max-width: 318px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
 }
 
 .filter__title {
@@ -55,6 +53,10 @@
     width: 87px;
     padding: 5px 10px 5px 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+  }
 }
 
 .filter__range-number {
@@ -79,6 +81,13 @@
   }
 }
 
+.filter__button {
+  @media (min-width: $desktop-width) {
+    letter-spacing: 1.3px;
+    padding: 8px 28px;
+  }
+}
+
 .filter__button-container {
   display: flex;
   flex-direction: column;
@@ -88,5 +97,11 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+    justify-content: start;
+    max-width: 318px;
   }
 }
