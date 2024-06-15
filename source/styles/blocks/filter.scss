@@ -14,7 +14,7 @@
   color: $color-black;
 }
 
-.filter__range-fields {
+.filter__range-group {
   display: flex;
   justify-content: space-between;
 }
@@ -28,7 +28,7 @@
   text-align: center;
 }
 
-.filter__range-field {
+.filter__range-number {
   border: none;
   background-color: transparent;
   font-family: inherit;
