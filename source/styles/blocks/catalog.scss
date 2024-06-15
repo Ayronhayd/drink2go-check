@@ -1,0 +1,30 @@
+.catalog {
+  padding: 50px 20px 44px;
+  background-color: $lightest-grey;
+}
+
+.catalog__list {
+  margin: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 349px 349px;
+    gap: 30px;
+  }
+}
+
+.badge {
+  margin: 0 0 4px;
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-primary;
+}
+
