@@ -4,7 +4,7 @@
   padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 30px 0;
+    padding: 60px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +21,11 @@
   color: $color-primary;
   text-align: center;
   margin: 0;
-  margin-bottom: 4px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
 }
 
 .features__titled {
@@ -31,7 +35,7 @@
   color: $color-black;
   text-align: center;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
@@ -74,6 +78,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    gap: 21px;
   }
 }
 
