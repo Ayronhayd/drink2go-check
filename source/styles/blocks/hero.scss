@@ -15,7 +15,8 @@
   }
 }
 
-.hero--flat-white {
+.hero--flat-white,
+.hero__flat-white {
   background-color: $flat-white;
 
   @media (min-width: $tablet-width) {
@@ -27,7 +28,8 @@
   }
 }
 
-.hero--lavender-latte {
+.hero--lavender-latte,
+.hero__lavender-latte {
   background-color: $lavender-latte;
 
   @media (min-width: $tablet-width) {
@@ -39,7 +41,8 @@
   }
 }
 
-.hero--espresso {
+.hero--espresso,
+.hero__espresso {
   background-color: $espresso;
 
   @media (min-width: $tablet-width) {
