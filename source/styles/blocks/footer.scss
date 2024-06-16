@@ -1,0 +1,8 @@
+.footer__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+    padding: 40px 40px 0;
+  }
+}

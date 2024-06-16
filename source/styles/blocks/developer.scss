@@ -1,0 +1,26 @@
+.developer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 14px 0 30px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
+  }
+}
+
+.developer__link {
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $color-gray;
+
+  display: flex;
+}
+
+.developer__image {
+  display: block;
+  width: 16px;
+  height: 16px;
+}

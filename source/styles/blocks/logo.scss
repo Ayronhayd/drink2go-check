@@ -30,4 +30,8 @@
     width: 170px;
     height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 }
