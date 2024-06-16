@@ -3,16 +3,16 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-right: 27px;
+  margin-right: 22px;
   gap: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 12px;
+    margin: 0;
+    gap: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 15px;
-    gap: 45px;
+    gap: 20px;
   }
 }
 
@@ -20,8 +20,27 @@
 .user-list__link {
   display: flex;
   text-decoration: none;
-  padding: 10px;
+  padding: 15px 10px;
   color: $color-black;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 22px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 20px;
+    gap: 5px;
+  }
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  &:active {
+    background-color: rgba($color-primary, 10%);
+  }
 }
 
 .user-list__link-user {

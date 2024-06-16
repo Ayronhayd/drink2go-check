@@ -1,4 +1,7 @@
 .logo {
+  display: flex;
+  align-self: center;
+
   @media (min-width: $tablet-width) {
     width: 82px;
     height: 36px;
