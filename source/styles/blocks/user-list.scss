@@ -16,13 +16,11 @@
   }
 }
 
-
 .user-list__link {
   display: flex;
   text-decoration: none;
   padding: 15px 10px;
   color: $color-black;
-
 
   @media (min-width: $tablet-width) {
     padding: 32px 22px;
@@ -57,7 +55,7 @@
   }
 }
 
-.user-button__img {
+.user-list__img {
   width: 16px;
   height: 16px;
 }
