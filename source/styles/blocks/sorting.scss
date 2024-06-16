@@ -40,4 +40,15 @@
     letter-spacing: 1.1px;
     padding-right: 10px;
   }
+
+
+  &:hover,
+  &:focus {
+    background-color: $color-secondary;
+    outline: none;
+  }
+
+  &:active {
+    appearance: none;
+  }
 }
