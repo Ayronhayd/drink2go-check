@@ -25,6 +25,16 @@
   line-height: 24px;
   padding: 8px 16px;
   background-color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    color: $color-white;
+    background-color: $primary-darker;
+  }
 }
 
 
@@ -45,6 +55,18 @@
 .pagination__link-move {
   background-color: $color-white;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background-color: $primary-lighter;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-white;
+    background-color: $primary-darker;
+  }
 }
 
 .pagination__move {
@@ -62,12 +84,31 @@
   font-size: 16px;
   line-height: 24px;
 
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background-color: $color-white;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     mask-image: none;
     background-color: transparent;
     width: auto;
     height: auto;
     padding: 8px 20px;
+
+    &:hover,
+    &:focus {
+      color: $color-white;
+      background-color: $primary-lighter;
+      outline: none;
+    }
+
+    &:active {
+      color: $color-white;
+      background-color: $primary-darker;
+    }
   }
 }
 

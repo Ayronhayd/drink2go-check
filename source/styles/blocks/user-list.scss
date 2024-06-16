@@ -34,8 +34,10 @@
     gap: 5px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-primary;
+    outline: none;
   }
 
   &:active {

@@ -116,10 +116,15 @@
   &:hover,
   &:focus {
     background-color: $primary-opacity;
+    outline: none;
   }
 
   &:active {
     background-color: $color-primary;
+  }
+
+  &:disabled {
+    background-color: rgba($color-gray, 25%);
   }
 }
 
@@ -271,10 +276,6 @@
   border: none;
   cursor: pointer;
 
-  &:active {
-    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
-  }
-
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 640px;
@@ -283,6 +284,15 @@
   @media (min-width: $desktop-width) {
     width: 80px;
     height: 714px;
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:disabled {
+    color: $color-gray;
+    background-color: transparent;
   }
 }
 

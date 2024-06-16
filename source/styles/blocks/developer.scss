@@ -17,6 +17,14 @@
   color: $color-gray;
 
   display: flex;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
 }
 
 .developer__image {

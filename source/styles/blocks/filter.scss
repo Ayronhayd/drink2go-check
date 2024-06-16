@@ -79,6 +79,11 @@
     color: $color-gray;
     opacity: 1;
   }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
 
 .filter__button {

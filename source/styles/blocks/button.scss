@@ -10,9 +10,11 @@
   letter-spacing: 1px;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-white;
     background-color: $primary-lighter;
+    outline: none;
   }
 
   &:active {

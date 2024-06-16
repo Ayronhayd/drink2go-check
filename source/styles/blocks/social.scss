@@ -4,12 +4,11 @@
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1440px;
-  padding: 22px 20px 0;
-  padding-bottom: 12px;
+  padding: 20px;
   border-bottom: 1px solid $color-gray;
 
   @media (min-width: $tablet-width) {
-    padding-top: 42px;
+    padding-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,8 +41,21 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
   color: $color-gray;
+  align-self: center;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+    background-color: $color-secondary;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-primary;
+    background-color: $primary-opacity;
+  }
 }
 
 .social__svg {

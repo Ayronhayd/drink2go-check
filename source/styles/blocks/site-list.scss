@@ -75,12 +75,14 @@
     padding: 32px 20px 30px;
   }
 
-  &:hover {
-    color: $color-primary;
+  &:hover,
+  &:focus {
+    color: $primary-lighter;
+    outline: none;
   }
 
   &:active {
-    background-color: rgba($color-primary, 10%);
+    color: $primary-darker;
   }
 }
 
