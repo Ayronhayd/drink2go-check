@@ -300,14 +300,14 @@
                 <div class="filter__range-group">
                   <label class="filter__range-label">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
-                    <input class="filter__range-number filter__range-min" id="min" type="number" name="min-price" min="0"
-                      max="1000" placeholder="0" required>
+                    <input class="filter__range-number filter__range-min" id="min" type="number" name="min-price"
+                      min="0" max="1000" placeholder="0" required>
                   </label>
                   <div class="range__split"></div>
                   <label class="filter__range-label">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
-                    <input class="filter__range-number filter__range-max" id="max" type="number" name="max-price" min="0"
-                      max="1000" placeholder="500" value="900" required>
+                    <input class="filter__range-number filter__range-max" id="max" type="number" name="max-price"
+                      min="0" max="1000" placeholder="500" value="900" required>
                   </label>
                 </div>
               </fieldset>
@@ -555,7 +555,7 @@
       </div>
     </section>
 
-    <section class="map" data-test="map" >
+    <section class="map" data-test="map">
       <h2 class="visually-hidden">карта</h2>
       <div class="map__wrapper">
         <picture>
@@ -569,14 +569,54 @@
             srcset="./images/map-desktop@1x.jpg 1x, ./images/map-desktop@2x.jpg 2x">
           <source type="image/jpg" width="768" height="480" media="(min-width: 768px)"
             srcset="./images/map-tablet@1x.jpg 1x, ./images/map-tablet@2x.jpg 2x">
-          <img class="map__image" src="./images/map-mobil@1x.jpg"
-            srcset="./images/map-mobil@2x.jpg" width="320" height="420" alt="Примеры работ">
+          <img class="map__image" src="./images/map-mobil@1x.jpg" srcset="./images/map-mobil@2x.jpg" width="320"
+            height="420" alt="Примеры работ">
         </picture>
       </div>
     </section>
   </main>
-  <script src="./vendor/nouislider.min.js" defer></script>
+
+  <footer class="footer container">
+    <div class="social">
+      <div class="social__logo logo">
+        <picture>
+        <source width="170" height="36" media="(min-width: 768px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
+        <img class="logo__image" src="images/logo-tablet.svg" width="82" height="36" alt="Логотип Cat Energy.">
+        </picture>
+      </div>
+      <span class="social__text">Интернет-магазин кофейных напитков</span>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">В контакте.</span>
+            <svg class="social__svg" width="20" height="20" viewBox="0 0 20 20">
+              <use href="./icons/stack.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Пинтерест.</span>
+            <svg class="social__svg" width="20" height="20" viewBox="0 0 20 20">
+              <use href="./icons/stack.svg#pinterest"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Одноклассники.</span>
+            <svg class="social__svg" width="20" height="20" viewBox="0 0 20 20">
+              <use href="./icons/stack.svg#ok"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
   <script src="./scripts/index.js" defer></script>
+  <script src="./vendor/nouislider.min.js" defer></script>
 </body>
 
 </html>

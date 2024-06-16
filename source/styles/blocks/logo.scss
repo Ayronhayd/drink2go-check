@@ -22,12 +22,12 @@
   display: block;
 }
 
-.header__logo-sign {
-  &:link:hover {
-    opacity: 0.8;
-  }
+.social__logo {
+  width: 82px;
+  height: 36px;
 
-  &:link:active {
-    opacity: 0.6;
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    height: 36px;
   }
 }

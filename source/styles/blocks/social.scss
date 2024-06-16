@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  min-width: 280px;
+  justify-content: space-between;
+}
+
+.social__text {
+  display: none;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.social__link {
+  display: block;
+  padding: 10px;
+  color: $color-gray;
+}
+
+.social__svg {
+  width: 20px;
+  height: 20px;
+}
