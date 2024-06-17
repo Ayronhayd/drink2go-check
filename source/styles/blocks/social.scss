@@ -38,6 +38,16 @@
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  max-width: 195px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
+  }
 }
 
 .social__link {

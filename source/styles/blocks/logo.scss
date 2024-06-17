@@ -5,6 +5,8 @@
   @media (min-width: $tablet-width) {
     width: 82px;
     height: 36px;
+    padding-top: 22px;
+    align-self: stretch;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +28,7 @@
 }
 
 .social__logo {
+  align-self: center;
   width: 82px;
   height: 36px;
 

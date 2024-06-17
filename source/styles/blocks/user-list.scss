@@ -5,14 +5,17 @@
   margin: 0;
   margin-right: 22px;
   gap: 24px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     gap: 0;
+    min-width: 120px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 20px;
+    max-width: 400px;
   }
 }
 
@@ -21,6 +24,7 @@
   text-decoration: none;
   padding: 15px 10px;
   color: $color-black;
+
 
   @media (min-width: $tablet-width) {
     padding: 32px 22px;
