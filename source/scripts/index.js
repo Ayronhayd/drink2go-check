@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('.hero__card');
   const items = carousel.querySelectorAll('.hero__card-item');
-  const dotsContainer = document.querySelector('.hero__pagination');
+  const dotsContainer = document.querySelector('.slider-pagination');
 
   // Insert dots into the DOM
   items.forEach((_, index) => {

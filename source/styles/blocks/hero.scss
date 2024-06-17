@@ -49,7 +49,7 @@
   }
 }
 
-.hero__background--flat-white {
+.hero__flat-white {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -67,7 +67,7 @@
   }
 }
 
-.hero__background--lavender-latte {
+.hero__lavender-latte {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -85,7 +85,7 @@
   }
 }
 
-.hero__background--espresso {
+.hero__espresso {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -104,7 +104,7 @@
 }
 
 
-.hero__pagination {
+.slider-pagination {
   display: none;
 
   @media (min-width: $desktop-width) {

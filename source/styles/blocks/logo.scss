@@ -13,14 +13,6 @@
     width: 170px;
     height: 36px;
   }
-
-  &:link:hover {
-    opacity: 0.8;
-  }
-
-  &:link:active {
-    opacity: 0.6;
-  }
 }
 
 .logo__image {
@@ -33,6 +25,7 @@
   height: 36px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: 170px;
     height: 36px;
   }
