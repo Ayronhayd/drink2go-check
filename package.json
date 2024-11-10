@@ -3,6 +3,7 @@
   "version": "2.0.6",
   "private": true,
   "type": "module",
+  "homepage": "https://[github-username].github.io/[github-repository-name]",
   "engines": {
     "node": "^18.18 || ^20.9"
   },
@@ -41,7 +42,8 @@
     "html-03": "backstop test --config=\"test-config/backstop-html-03.config.js\"",
     "test-06": "backstop test --config=\"test-config/backstop-test-06.config.js\"",
     "img-01": "backstop test --config=\"test-config/backstop-img-01.config.js\"",
-    "test-headers": "html-validate source/index.html"
+    "test-headers": "html-validate source/index.html",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "3.0.0",
@@ -60,8 +62,8 @@
     "gulp-sharp-responsive": "0.4.1",
     "gulp-stacksvg": "4.0.0",
     "gulp-svgmin": "4.1.0",
-    "htmlacademy-backstopjs": "6.6.1",
     "html-validate": "^8.5.0",
+    "htmlacademy-backstopjs": "6.6.1",
     "linthtml-config-htmlacademy": "1.0.25",
     "npm-run-all": "4.1.5",
     "postcss": "8.4.38",
@@ -71,5 +73,8 @@
     "stylelint": "16.6.1",
     "stylelint-config-htmlacademy": "4.2.3",
     "w3c-html-validator": "1.8.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
