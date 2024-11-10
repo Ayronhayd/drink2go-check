@@ -43,7 +43,7 @@
     "test-06": "backstop test --config=\"test-config/backstop-test-06.config.js\"",
     "img-01": "backstop test --config=\"test-config/backstop-img-01.config.js\"",
     "test-headers": "html-validate source/index.html",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d build"
   },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "3.0.0",
